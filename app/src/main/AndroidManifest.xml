@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andoid.connect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".LoginPage"></activity>
+        <activity android:name=".ProfileMainPage"></activity>
+        <activity android:name=".PartnerApplicationForeign"></activity>
+        <activity android:name=".PartnerApplicationKorean"></activity>
+        <activity android:name=".PartnerProfile_main"></activity>
+        <activity android:name=".MyPage"></activity>
+        <activity android:name="JoinChoosePage"></activity>
+        <activity android:name=".OlympicWG"></activity>
+        <activity android:name=".JoinPage"></activity>
+        <activity android:name=".GuidebookMain"></activity>
+        <activity android:name=".Schedules"></activity>
+    </application>
+
+</manifest>

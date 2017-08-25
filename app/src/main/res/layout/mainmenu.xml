@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="190.5sp"
+            android:layout_height="104.9sp"
+            android:layout_marginTop="107dp"
+            android:background="@drawable/button_selector_connect"
+            android:longClickable="true"
+            android:onClick="onProfile"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/guidebook"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/profile"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/button_selector_guidebook"
+            android:onClick="onguidebook" />
+
+        <ImageButton
+            android:id="@+id/Schedules"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_alignTop="@+id/guidebook"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/guidebook"
+            android:layout_toRightOf="@+id/guidebook"
+            android:background="@drawable/button_selector_schedules"
+            android:onClick="onSchedules" />
+
+        <ImageButton
+            android:id="@+id/Translator"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_alignLeft="@+id/guidebook"
+            android:layout_alignStart="@+id/guidebook"
+            android:layout_below="@+id/guidebook"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_selector_translator"
+            android:onClick="onTranslator" />
+
+        <ImageButton
+            android:id="@+id/Weather"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_alignLeft="@+id/Schedules"
+            android:layout_alignStart="@+id/Schedules"
+            android:layout_alignTop="@+id/Translator"
+            android:background="@drawable/button_selector_weather"
+            android:onClick="onWeather" />
+    </RelativeLayout>
+
+</LinearLayout>
